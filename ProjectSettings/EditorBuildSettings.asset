@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/mrtk-test-save.unity
+    guid: 642dd6b3e7afd9e4fa9e9064df7c3691
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9e6fe84a5f46e5041b9e62422a0e3c27, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9dd05365f31d8274ca5200ce3e0f757a, type: 2}
