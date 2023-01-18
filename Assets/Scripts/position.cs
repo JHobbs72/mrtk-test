@@ -9,11 +9,19 @@ public class position : MonoBehaviour
     [SerializeField]
     private GameObject outer;
 
+    private int count = 0;
+
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position = outer.transform.position;
+        count++;
+        if (count >= 100)
+        {
+            gameObject.transform.position = outer.transform.position;
 
-        gameObject.transform.rotation = outer.transform.rotation;
+            gameObject.transform.rotation = outer.transform.rotation;
+
+            count = 0;
+        }
     }
 }
