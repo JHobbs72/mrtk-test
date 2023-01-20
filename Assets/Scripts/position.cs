@@ -1,3 +1,4 @@
+using Microsoft.MixedReality.Toolkit.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,19 +10,14 @@ public class position : MonoBehaviour
     [SerializeField]
     private GameObject outer;
 
-    private int count = 0;
-
     // Update is called once per frame
     void Update()
     {
-        count++;
-        if (count >= 100)
-        {
-            gameObject.transform.position = outer.transform.position;
+        gameObject.transform.position = outer.transform.position;
 
-            gameObject.transform.rotation = outer.transform.rotation;
+        gameObject.transform.rotation = outer.transform.rotation;
 
-            count = 0;
-        }
+
+
     }
 }
